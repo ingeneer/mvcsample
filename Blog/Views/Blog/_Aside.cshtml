@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Blog.Models.Publicacion>
+
+@foreach (var post in Model)
+{
+    <h5>@post.Titulo</h5>
+    <span>@post.Vistas Visitas</span>
+            <span>Desde @post.FechaPublicacion</span>
+}

@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Blog.Models.Publicacion>
+
+@{
+    ViewBag.Title = "Ideas";
+}
+
+<h2>Ideas Blog</h2>
+
+@foreach (var post in Model)
+{
+    <div class="card">
+        <h3>
+            @Html.ActionLink(post.Titulo, "Ver", new { idPublicacion = post.Id})
+        </h3>
+        <h4>@post.FechaPublicacion</h4>
+        <p>@post.Resumen</p>
+    </div>
+}

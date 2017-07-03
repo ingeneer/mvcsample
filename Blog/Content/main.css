@@ -1,0 +1,36 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background: #a7a09a;
+}
+
+aside {
+    float: left;
+    width: 250px;
+    height: 100%;
+    background: #3b5998;
+    color: white;
+}
+
+section#content{
+    float: right;
+
+}
+
+footer{
+    clear: both;
+
+}
+
+.card{
+    padding: 1em;
+    background-color: #838687;
+    color: white;
+}
+
+
+@media screen and (max-width: 320px){
+    aside { display: none }
+    section { width: 100% }
+}
